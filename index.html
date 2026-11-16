@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MODESTY WEALTH IN HEALTH – Wellness, Systematic Wealth &amp; Structure</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#120a0c;--wine:#3b0b17;--rose:#c8243f;--gold:#d9b06a;--cream:#fbf5ee;--mist:#f3e8df;--txt:#2b1d20}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Poppins,system-ui,sans-serif;color:var(--txt);background:var(--cream);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}
+a{overflow-wrap:anywhere}
+img{max-width:100%;height:auto;display:block;margin:2rem auto;border-radius:14px;box-shadow:0 18px 50px rgba(18,10,12,.28)}
+section{padding:5rem 1.25rem}
+.wrap{max-width:780px;margin:0 auto}.wide{max-width:1000px;margin:0 auto}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.15;margin:0 0 1rem;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,5vw,2.7rem);font-weight:900}
+h3{font-size:clamp(1.25rem,3.6vw,1.7rem);font-weight:700}
+p{margin:0 0 1.15rem}
+.center{text-align:center}
+.rule{width:64px;height:3px;background:var(--gold);border:0;margin:0 0 1.6rem;border-radius:3px}.center .rule{margin-left:auto;margin-right:auto}
+/* hero */
+.hero{background:radial-gradient(ellipse at 50% 0%,#6a1226 0%,var(--wine) 38%,var(--ink) 100%);color:#fff;text-align:center;padding:6rem 1.25rem 5rem;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(2.1rem,7.5vw,4.2rem);font-weight:900;margin:0 auto 1.2rem;max-width:900px}
+.hero hr+h1{color:var(--gold);font-style:italic;font-weight:700;font-size:clamp(1.5rem,5vw,2.4rem)}
+.hero .rule{margin:1.8rem auto}
+/* dark & wine bands */
+.dark{background:var(--ink);color:#f4ece6}.dark h2,.dark h3{color:#fff}.dark em,.dark strong{color:var(--gold)}
+.wine{background:linear-gradient(160deg,var(--wine),#22060d);color:#f8eee9}.wine h2,.wine h3{color:#fff}.wine strong,.wine em{color:var(--gold)}
+.cream{background:var(--cream)}.mist{background:var(--mist)}
+.cream h1,.cream h2,.cream h3,.mist h1,.mist h2,.mist h3{color:var(--wine)}
+.lead{font-size:clamp(1.15rem,3vw,1.4rem);font-family:'Playfair Display',serif;line-height:1.5}
+/* definition block */
+.def p{padding-left:1.1rem;border-left:3px solid var(--gold)}
+.chips{list-style:none;padding:0;margin:1.2rem 0 2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.8rem;counter-reset:n}
+.chips li{counter-increment:n;background:#fff;border:1px solid #ead8cc;border-radius:12px;padding:.9rem 1rem .9rem 3.2rem;position:relative;font-style:italic;color:var(--wine);box-shadow:0 6px 18px rgba(59,11,23,.06)}
+.chips li::before{content:counter(n,decimal-leading-zero);position:absolute;left:1rem;top:50%;transform:translateY(-50%);font:700 .95rem 'Playfair Display',serif;color:var(--rose);font-style:normal}
+.props{margin:1rem 0 1.6rem;padding:1.2rem 1.4rem;background:var(--wine);color:#fff;border-radius:12px;border-left:4px solid var(--gold)}
+/* cards */
+.grid{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:1.8rem}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(217,176,106,.3);border-radius:14px;padding:1.4rem 1.4rem .4rem}
+.cream .card,.mist .card{background:#fff;border-color:#ead8cc;box-shadow:0 10px 30px rgba(59,11,23,.07)}
+.big{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,4vw,2rem);line-height:1.3;color:#fff;margin:2rem 0}
+.big em{color:var(--gold)}
+/* offer */
+.offer{border:2px solid var(--gold);border-radius:18px;padding:2rem 1.6rem 1rem;background:rgba(255,255,255,.04);margin-bottom:2.5rem;text-align:center}
+.offer h3{color:var(--gold)}
+.faq{background:#fff;border-radius:14px;padding:1.2rem 1.4rem .2rem;margin-bottom:1rem;border-left:4px solid var(--rose);box-shadow:0 8px 24px rgba(59,11,23,.07)}
+/* buttons */
+.btn{display:inline-block;background:linear-gradient(135deg,#e0334f,var(--rose) 55%,#9d1830);color:#fff;border:0;border-radius:50px;padding:1.05rem 2.6rem;font:600 1.05rem Poppins,sans-serif;text-decoration:none;cursor:pointer;box-shadow:0 12px 30px rgba(200,36,63,.4);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(200,36,63,.5)}
+.btn:focus-visible,input:focus-visible,.ghost:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+.ghost{display:inline-block;color:var(--gold);border:2px solid var(--gold);border-radius:50px;padding:.9rem 2rem;text-decoration:none;font-weight:600}
+.ghost:hover{background:var(--gold);color:var(--ink)}
+/* form */
+.formsec{background:radial-gradient(ellipse at 50% 100%,#5a0f21,var(--ink) 70%);color:#fff}
+.formsec h2{color:#fff}.formsec p{color:#e9d9d0}
+form{background:#fff;color:var(--txt);border-radius:18px;padding:2rem 1.6rem 1.7rem;max-width:560px;margin:2rem auto 0;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+label{display:block;font-weight:600;font-size:.92rem;margin:1.1rem 0 .35rem;color:var(--wine)}label span{color:var(--rose)}
+input[type=text],input[type=tel],input[type=email]{width:100%;padding:.85rem 1rem;border:1.5px solid #d9c3b8;border-radius:10px;font:inherit;background:#fffdfb}
+input:focus{border-color:var(--rose)}
+form .btn{width:100%;margin-top:1.4rem}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+#status{margin-top:1rem;font-weight:600;text-align:center}#status.ok{color:#146c2e}#status.err{color:#b00020}
+#top{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));background:var(--gold);color:var(--ink);border:0;border-radius:50%;width:46px;height:46px;font-size:1.2rem;cursor:pointer;display:none;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+@media (max-width:600px){section{padding:3.5rem 1.1rem}.hero{padding:4.5rem 1.1rem 3.5rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+<!-- Meta (Facebook) Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','4500458500241702');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none;margin:0" src="https://www.facebook.com/tr?id=4500458500241702&ev=PageView&noscript=1" alt=""></noscript>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<h1>WANT TO PROTECT YOUR HEALTH WITH GENUINE SOLUTION?</h1>
+<hr class="rule">
+<h1>Here comes the solution...</h1>
+</div></header>
+
+<section class="dark center"><div class="wrap">
+<h2>DOUBLE RED ROSE! (DRR)</h2><hr class="rule">
+<p class="lead">A Better Wellness Routine Can Start with One Simple Choice - <em>"Superfruit-based Antioxidant Drink or Supplement!"</em></p>
+<img data-asset="multiple.png" alt="">
+</div></section>
+
+<section class="cream def"><div class="wrap">
+<h2>DOUBLE RED ROSE?</h2><hr class="rule">
+<p><strong><em>Double Red Rose</em> refers to a superfruit-based antioxidant drink or supplement formulated with multiple red botanicals.</strong></p>
+<p><strong>It's a nutritional wellness supplement manufactured and marketed by the direct-selling Affluence Global.</strong></p>
+<p><strong>The name refers to Cellular Generation/Health driven by a proprietary "12-in-1 blend" of natural ingredients.</strong></p>
+<div class="props"><p style="margin:0">These ingredients are rich in the following:<br>polyphenols<br>nthocyanins<br>Vtamin C, and other phytonutrients that support whole‑body wellness.</p></div>
+<p>Here're are the "12-in-1 blend" of natural ingredients:</p>
+<ul class="chips"><li>Double Red Rose</li><li>Goji Berry</li><li>Pomegranate P</li><li>Peach</li><li>Chinese Dates (Jujube)</li><li>Red Grapes</li><li>Acerola Cherry</li><li>Lemon</li><li>Red Ginseng</li><li>Carobe Extract&amp; Roselle</li><li>Honey Locust</li><li>NAC (Normal Acetyl Cysteine)</li></ul>
+<p>It provides strong antioxidant support, improved skin vitality, cardiovascular wellness, mood balance, and overall daily wellbeing...</p>
+<p>Thanks to its blend of red superfruits such as pomegranate, goji berry, red grapes, roselle, and acerola cherry.</p>
+</div></section>
+
+<section class="wine center"><div class="wrap">
+<p class="big">Finding a quality wellness product you can feel, confident buying isn’t always easy. So, what should you look for?</p>
+<p class="lead">Something convenient, properly packaged, and backed by a seller you can trust.</p>
+<p class="lead">The biggest concern is often quality and authenticity.</p>
+<p class="big">That’s where <em>Double Red Rose</em> comes in — a convenient addition to your personal wellness routine.</p>
+</div></section>
+
+<section class="mist"><div class="wrap">
+<h1 style="font-size:clamp(2rem,6vw,3.2rem);font-weight:900">DOUBLE RED ROSE</h1><hr class="rule">
+<p class="lead"><strong>Make Wellness a Beautiful Part of Your Everyday Life</strong></p>
+<p>Your well-being deserves attention!</p>
+<p>Make today the beginning of a more intentional wellness routine!.</p>
+<h3 style="margin-top:2.5rem">Are You Giving Your Well-Being the Attention It Deserves?</h3>
+<p>Life can get busy.</p>
+<p>Between work, family, business, and everyday responsibilities, taking care of yourself can easily move to the bottom of your priority list.</p>
+<p>But looking after yourself shouldn't have to wait until you have more time.</p>
+<p>Your wellness routine deserves the same attention you give to everything else that matters.</p>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<h2>Don't Keep Putting Yourself Last!</h2><hr class="rule">
+<p>It's easy to promise yourself that you'll start taking better care of yourself tomorrow.</p>
+<p>Then tomorrow becomes next week, and next week becomes another month.</p>
+<p>The truth is that building a wellness routine doesn't have to be complicated.</p>
+<p>Sometimes, the first step is simply discovering a product that fits your needs, preferences, and lifestyle.</p>
+<p class="big">You deserve to make informed choices about your well-being instead of leaving it to chance.</p>
+</div></section>
+
+<section class="cream"><div class="wrap">
+<h2>Discover Double Red Rose</h2><hr class="rule">
+<h3>Introducing...</h3>
+<p class="lead">Double Red Rose — a wellness product you can explore as part of your personal self-care journey.</p>
+<p>Whether you're reviewing wellness products for yourself or searching for a thoughtful addition to your daily routine, the first step is understanding what...</p>
+<p>Double Red Rose offers and whether it's right for your needs.</p>
+<p>Don't buy because of hype.</p>
+<p><strong>Choose with knowledge, confidence, and a clear understanding of the product.</strong></p>
+</div></section>
+
+<section class="wine"><div class="wrap">
+<h2>Make Your Decision With Confidence</h2><hr class="rule">
+<p>A trustworthy wellness decision starts with reliable information.</p>
+<p>Before purchasing Double Red Rose, learn about its ingredients, intended use, directions, and manufacturer information.</p>
+<p>Where available, review genuine customer feedback and relevant product documentation so you can make an informed decision.</p>
+<p class="big">Your trust matters. Your well-being matters. And honest information matters</p>
+</div></section>
+
+<section class="mist"><div class="wrap">
+<h2>Your Opportunity to Explore Double Red Rose</h2><hr class="rule">
+<p class="lead"><strong><em>Discover Double Red Rose</em></strong> Your Next Step Toward a More Intentional Wellness Routine</p>
+<p>The right wellness choice begins with the right information.</p>
+<p>Many people want to take better care of themselves but struggle to find products that suit their needs, preferences, and daily routines.</p>
+<p>With so many products and promises competing for attention, deciding what to choose can feel overwhelming.</p>
+<p>You don't need more confusion. You need clear information.*You need to understand what a product contains, how it is intended to be used, and what you can reasonably expect from it.</p>
+<p>Because when it comes to wellness, an informed decision is always better than a decision driven by exaggerated promises.</p>
+</div></section>
+
+<section class="dark"><div class="wide">
+<div class="wrap center">
+<h2>MEET DOUBLE RED ROSE.</h2><hr class="rule">
+<p class="lead">A wellness product worth exploring if you're looking for an option that aligns with your personal needs.</p>
+<p>Instead of guessing, take a moment to learn about the product, its verified features, and its recommended use.Make your next wellness decision with clarity.</p>
+<p><strong>Trusted by customers who choose Double Red Rose for their wellness routine.</strong></p>
+</div>
+<img data-asset="IMG-20261003-WA0032-1.jpg" alt="">
+<h3 class="center" style="margin-top:3rem;color:var(--gold)">HERE'RE HEALTH BENEFITS OF DOUBLE RED ROSE SUPPLEMENT PLUS... ACTIVE INGREDIENTS</h3>
+<img data-asset="ingredient.png" alt="">
+<img data-asset="health.jpg" alt="">
+</div></section>
+
+<section class="cream"><div class="wide center">
+<h2>OTHER BENEFITS INCLUDE THE FOLLOWING:</h2><hr class="rule">
+<img data-asset="173217.jpg" alt="">
+<h2 style="margin-top:4rem">PROOF NEVER LIES! TAKE A LOOK...</h2><hr class="rule">
+<img data-asset="173312.jpg" alt="">
+<img data-asset="IMG-20261006-WA0040.jpg" alt="">
+</div></section>
+
+<section class="wine"><div class="wrap">
+<div class="offer">
+<h3>SPECIAL OFFER AVAILABLE NOW</h3>
+<p>Limited quantities are available at the current offer.</p>
+<p><strong>Buy with confidence: satisfaction guarantee included.</strong></p>
+</div>
+<h3>WHY SHOULD YOU TRUST THE OFFER?</h3><hr class="rule">
+<p>We believe customers deserve transparency.</p>
+<p>That's why your purchase decision should be supported by genuine product information, clear usage instructions, and authentic customer experiences where available.</p>
+<p>No fabricated testimonials. No promises of guaranteed results.</p>
+<p>Just the information you need to evaluate Double Red Rose for yourself.</p>
+</div></section>
+
+<section class="dark center"><div class="wrap">
+<h2>REVIEWS/TESTIMONIALS OF REAL PEOPLE WHO USED DOUBLE RED ROSE AND CONFIRMED ITS POWERFUL EFFICACY FOR WELLNESS AND SOUND HEALTH</h2><hr class="rule">
+<p>Click this link below now and hear all different reviews and testimonials of real people who used this powerful product and confirmed it's power of efficacy.</p>
+<p><a class="ghost" href="https://modestywealthinhealth.com.ng/testimonials"><strong><em>https://modestywealthinhealth.com.ng/testimonials</em></strong></a></p>
+</div></section>
+
+<section class="mist"><div class="wrap">
+<h2 class="center">FREQUENTLY ASKED QUESTIONS (FAQs)</h2><hr class="rule" style="margin-left:auto;margin-right:auto">
+<div class="faq"><p><strong>Is it easy to use? Yes.</strong></p></div>
+<div class="faq"><p><strong>Is it securely packaged?</strong></p><p><strong>Yes.</strong></p></div>
+<div class="faq"><p><strong>How do I order?</strong></p><p><strong>Simply fill the simple form below and place an order now.</strong></p></div>
+<p class="center" style="margin-top:2rem"><a class="btn" href="#order">Get the details</a></p>
+</div></section>
+
+<section class="formsec center" id="order"><div class="wrap">
+<h2>Buyer's Contact Form</h2><hr class="rule">
+<p class="lead">Kindly fill out the form below</p>
+<form id="f" novalidate style="text-align:left">
+<label for="name">Name <span>*</span></label>
+<input id="name" name="name" type="text" required maxlength="120" autocomplete="name">
+<label for="phone">Phone / WhatsApp No. <span>*</span></label>
+<input id="phone" name="phone" type="tel" required maxlength="30" autocomplete="tel">
+<label for="email">Email <span>*</span></label>
+<input id="email" name="email" type="email" required maxlength="200" autocomplete="email">
+<label for="address">Address <span>*</span></label>
+<input id="address" name="address" type="text" required maxlength="300" autocomplete="street-address">
+<label for="country">Country <span>*</span></label>
+<input id="country" name="country" type="text" required maxlength="80" autocomplete="country-name">
+<div class="hp" aria-hidden="true"><label>Leave blank <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+<div id="ts" style="margin-top:1.2rem"></div>
+<button class="btn" type="submit" id="send">Submit</button>
+<div id="status" role="status" aria-live="polite"></div>
+</form>
+</div></section>
+
+<button id="top" aria-label="Scroll to Top" title="Scroll to Top">↑</button>
+
+<script>
+// >>> After deploying the Worker, put its URL here:
+var ENDPOINT = "https://drr-form.officialtvet.workers.dev/submit";
+// Optional spam check. Leave "" to switch it off (then do NOT set TURNSTILE_SECRET in Cloudflare).
+var TURNSTILE_SITE_KEY = "";
+var ORIGIN_IMG = "https://www.modestywealthinhealth.com.ng/wp-content/uploads/2026/10/";
+
+// Local copy first (assets/), original URL as fallback
+document.querySelectorAll("img[data-asset]").forEach(function(i){
+  var n=i.dataset.asset, tried=false;
+  i.onerror=function(){ if(!tried){tried=true;i.src=ORIGIN_IMG+n;} else {i.onerror=null;i.alt="Missing image: "+n;} };
+  i.src="assets/"+n;
+});
+
+if(TURNSTILE_SITE_KEY){
+  var ts=document.createElement("script");ts.src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";ts.async=true;
+  ts.onload=function(){turnstile.render("#ts",{sitekey:TURNSTILE_SITE_KEY})};document.head.appendChild(ts);
+}
+var top_=document.getElementById("top");
+addEventListener("scroll",function(){top_.style.display=scrollY>500?"block":"none"});
+top_.onclick=function(){scrollTo({top:0})};
+
+var f=document.getElementById("f"), st=document.getElementById("status"), btn=document.getElementById("send");
+function msg(t,c){st.textContent=t;st.className=c||""}
+f.addEventListener("submit",async function(e){
+  e.preventDefault();
+  var d=Object.fromEntries(new FormData(f).entries());
+  var need=["name","phone","email","address","country"];
+  for(var k of need){ if(!String(d[k]||"").trim()){ msg("Please fill in all required fields.","err"); f.elements[k].focus(); return; } }
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)){ msg("Please enter a valid email address.","err"); f.elements.email.focus(); return; }
+  if(!/^[+\d][\d\s()\-]{6,}$/.test(d.phone)){ msg("Please enter a valid phone / WhatsApp number.","err"); f.elements.phone.focus(); return; }
+  btn.disabled=true; msg("Sending…");
+  try{
+    var r=await fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({name:d.name,phone:d.phone,email:d.email,address:d.address,country:d.country,website:d.website,token:d["cf-turnstile-response"]||""})});
+    var j=await r.json().catch(function(){return{}});
+    if(r.ok&&j.ok){ f.reset(); if(window.turnstile&&TURNSTILE_SITE_KEY)turnstile.reset(); msg("Thank you! Your order details have been sent. We will contact you shortly.","ok"); }
+    else{ if(window.turnstile&&TURNSTILE_SITE_KEY)turnstile.reset(); msg(j.error||"Your submission could not be sent. Please check your details and try again.","err"); }
+  }catch(x){ msg("Network problem: your submission was not sent. Please check your connection and try again.","err"); }
+  btn.disabled=false;
+});
+</script>
+</body>
+</html>
